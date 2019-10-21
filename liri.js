@@ -65,7 +65,7 @@ inquirer
                   console.log(`Country:  ${response.data[i].venue.country}`);
                   console.log(`Date:  ${date}`);
                   console.log("**********************");
-                }
+            }
                 //submit to log.txt
                 fs.appendFile("log.txt", `\nArtist: ${artist}`, function (err) {
                   
