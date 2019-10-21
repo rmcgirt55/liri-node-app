@@ -1,0 +1,20 @@
+
+Movie: it
+Artist: green day
+Movie: it
+Artist: acdc
+Song: spotify-this-song,"I Want it That Way"
+
+
+
+
+Song: bye bye bye
+Movie: it
+Song: The Sign
+Song: spotify-this-song,"I Want it That Way"
+
+
+
+
+Song: The Sign
+Artist: green day
