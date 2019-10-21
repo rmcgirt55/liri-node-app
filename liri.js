@@ -103,12 +103,12 @@ inquirer
 
                 console.log("\n**********************");
                 console.log("\n**********************");
-                console.log(`Song:  ${response.tracks.items[7].name}`);
-                console.log(`Artist: ${response.tracks.items[7].album.artists[0].name}`);
-                console.log(`Spotify Preview: ${response.tracks.items[7].album.external_urls.spotify}`);
-                console.log(`Album: ${response.tracks.items[7].album.name}`);
-                console.log(`Release Year: ${response.tracks.items[7].album.release_date}`);
-                console.log(`Preview: ${response.tracks.items[7].preview_url}`);
+                console.log(`Song:  ${response.tracks.items[1].name}`);
+                console.log(`Artist: ${response.tracks.items[1].album.artists[0].name}`);
+                console.log(`Spotify Preview: ${response.tracks.items[1].album.external_urls.spotify}`);
+                console.log(`Album: ${response.tracks.items[1].album.name}`);
+                console.log(`Release Year: ${response.tracks.items[1].album.release_date}`);
+                console.log(`Preview: ${response.tracks.items[1].preview_url}`);
                 console.log("\n**********************");
                 //summiting song to log.txt
                 fs.appendFile("log.txt", `\nSong: ${result.track}`, function (err) {
@@ -145,14 +145,14 @@ inquirer
                     console.log(err);
                   }
                   else {
-                    console.log(`Song ${result.track.toUpperCase()} added to log.txt file !`);
+                    console.log(`Song ${result.track} added to log.txt file !`);
                   }
                 });
               })
               .catch(function (err) {
                 console.log(err);
               });
-          }
+                }
 
         })
       //Do-what-it-says
@@ -182,8 +182,8 @@ inquirer
               }
               else {
                 console.log(`Song ${data.toUpperCase()} summited results to log.txt file !`);
-              }
-            });
+                    }
+                    });
           })
 
       })
@@ -198,7 +198,7 @@ inquirer
         .prompt([
           {
             type: "input",
-            message: "What movie are you interested?",
+            message: "What movie are you interested in?",
             name: "movie"
           }
         ]).then(function (result) {
@@ -216,7 +216,7 @@ inquirer
                 console.log(`Actors: ${response.data.Actors}`);
                 console.log(`Plot: ${response.data.Plot}`);
                 console.log("\n**********************");
-              })
+                    })
             //add to log.tx 
             fs.appendFile("log.txt", `\nMovie: ${'Mr.Nobody'}`, function (err) {
 
@@ -226,10 +226,10 @@ inquirer
 
               else {
                 console.log(`Movie ${'Mr.Nobody'} Added to log.txt file!`);
-              }
+                    }
 
             });
-          }
+                }
           else {
             let ombdMovie = function () {
               axios.get("http://www.omdbapi.com/?t=" + result.movie + "&y=&plot=short&apikey=trilogy").then(
@@ -249,8 +249,8 @@ inquirer
                     console.log(`Actors: ${response.data.Actors}`);
                     console.log(`Plot: ${response.data.Plot}`);
                     console.log("\n**********************");
-                  }
-                })
+         }
+            })
             }
             ombdMovie();
             //summiting results (movies) to log file
@@ -262,7 +262,7 @@ inquirer
 
               else {
                 console.log(`Movie ${result.movie.toUpperCase()} Added to log.txt file !`);
-              }
+        }
             });
           }
         })
