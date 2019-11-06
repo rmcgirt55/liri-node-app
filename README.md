@@ -17,3 +17,10 @@ This app uses the arrows keys to reduce the amount of typing and to provide ease
 
 It also currently requests the users name and age making the app more personal.
 You will need your own spotigy credentials and are welcome to use the api information for bands in town and IMDB.
+
+<img src="screenshots/Screen Shot 2019-10-20 at 10.13.23 PM.png">
+<img src="screenshots/Screen Shot 2019-10-20 at 10.13.38 PM.png">
+<img src="screenshots/Screen Shot 2019-10-20 at 10.14.52 PM.png">
+<img src="screenshots/Screen Shot 2019-10-20 at 10.15.16 PM.png">
+<img src="screenshots/Screen Shot 2019-10-20 at 10.16.02 PM.png">
+<img src="Screen Shot 2019-10-20 at 10.19.26 PM.png">
